@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="launchApp"/>
+          <include name="login"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.AddToCartTest">
+        <methods>
+          <include name="AddToCart"/>
+          <include name="close"/>
+          <include name="LaunchApp"/>
+        </methods>
+      </class> <!-- tests.AddToCartTest -->
+      <class name="tests.RegistrationTest">
+        <methods>
+          <include name="LaunchApp"/>
+          <include name="register"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.RegistrationTest -->
+      <class name="tests.SearchProductTest">
+        <methods>
+          <include name="close"/>
+          <include name="SearchProd"/>
+          <include name="LaunchApp"/>
+        </methods>
+      </class> <!-- tests.SearchProductTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
